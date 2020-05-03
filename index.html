@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>airport.guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+
+
+
+        <div class = 'form-left'>
+          <div class="forceColor"></div>
+          <div class="topbar">
+
+            <input list="locations" name="location" id = "current_location" placeholder="Current Location" class="input">
+            <datalist id="locations">
+              <option value="Gate A23" id="gateA">
+              <option value="Gate B17">
+              <option value="Gate C12">
+            </datalist>
+
+            <input list="locations" name="location" id = "target_location" placeholder="Target Location" class="input">
+            <datalist id="locations">
+              <option value="Gate A23">
+              <option value="Gate B17">
+              <option value="Gate C12">
+
+            </datalist>
+          </div>
+          <button onclick="show_time()" id="button" class="submit" >Calculate Time</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class = "form-right">
+          <div class="forceColor"></div>
+            <div id="time" class = "text">
+              <label>Time Left </label>
+              <span id="tleft"></span>
+            </div>
+          <div class="topbar">
+            <input  type="text" id="remaining_time" placeholder="How much time do you have" class="input">
+          </div>
+          <button onclick="recomendations()" id="button" class="submit">Submit</button>
+        </div>
+
+        <div class = form-list>
+          <div class="forceColor"></div>
+          <div class = "text_list">
+            <h1> Options to kill your time </h1>
+          <ul id = "recomendation">
+
+          </ul>
+          </div>
+
+        </div>
+
+
+
+
+    <script src = "data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

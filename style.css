@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right bottom, #8ec6c5cc, #8566aacc);
+    background-size: cover;
+    background-position: bottom;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+}
+
+.form-left {
+  margin: 0 auto;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate3d(-160%, 0, 0);
+  width: 350px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #6983aa;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: inherit;
+  border-radius: 12px;
+}
+.form-left .forceColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6983aaff;
+}
+.form-left:before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  background: inherit;
+  left: -5%;
+  right: 0;
+  bottom: 0;
+  top: -5%;
+  filter: blur(3px);
+}
+
+.form-left .topbar .spanColor {
+  position: absolute;
+  width: 0px;
+  right: 20px;
+  height: 43px;
+  opacity: 0.2;
+  background-color: #f4f4f4;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: width 150ms ease-in-out, background-color 150ms 250ms ease-in-out, border 150ms 250ms ease-in-out;
+}
+.form-left .topbar .input {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 1rem;
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+}
+.form-left .topbar .input::-webkit-input-placeholder {
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+  font-weight: 200;
+}
+.form-left .topbar .input:focus {
+  outline: none;
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+.form-left .topbar .input.disabled:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form-left .topbar .input:hover {
+  border: 1px solid #f4f4f4;
+}
+.form-left .submit {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  display: block;
+  color: #f4f4f4;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: #8ec6c5;
+  :border-radius6: 6px;
+  cursor: pointer;
+}
+.form-left .submit:focus {
+  outline: none;
+}
+.form-left .submit:hover {
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-right {
+  margin: 0 auto;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 350px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #6983aa;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: inherit;
+  border-radius: 12px;
+}
+.form-right .forceColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6983aaff;
+}
+.form-right:before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  background: inherit;
+  left: -5%;
+  right: 0;
+  bottom: 0;
+  top: -5%;
+  filter: blur(3px);
+}
+
+.form-right .topbar .spanColor {
+  position: absolute;
+  width: 0px;
+  right: 20px;
+  height: 43px;
+  opacity: 0.2;
+  background-color: #f4f4f4;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: width 150ms ease-in-out, background-color 150ms 250ms ease-in-out, border 150ms 250ms ease-in-out;
+}
+.form-right .topbar .input {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 1rem;
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+}
+.form-right .topbar .input::-webkit-input-placeholder {
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+  font-weight: 200;
+}
+.form-right .topbar .input:focus {
+  outline: none;
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+.form-right .topbar .input.disabled:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form-right .topbar .input:hover {
+  border: 1px solid #f4f4f4;
+}
+.form-right .submit {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  display: block;
+  color: #f4f4f4;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: #8ec6c5;
+  :border-radius6: 6px;
+  cursor: pointer;
+}
+.form-right .submit:focus {
+  outline: none;
+}
+.form-right .submit:hover {
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+
+.text{
+    color: #f4f4f4;
+    position:relative;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3rem;
+    font-weight: 200;
+
+    padding: 10px 20px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    margin-bottom: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.form-list {
+  margin: 0 auto;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate3d(60%, 0, 0);
+  width: 350px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #6983aa;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: inherit;
+  border-radius: 12px;
+}
+
+.form-list .forceColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6983aaff;
+}
+.form-list:before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  background: inherit;
+  left: -5%;
+  right: 0;
+  bottom: 0;
+  top: -5%;
+  filter: blur(3px);
+}
+
+.form-list .topbar .spanColor {
+  position: absolute;
+  width: 0px;
+  right: 20px;
+  height: 43px;
+  opacity: 0.2;
+  background-color: #f4f4f4;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: width 150ms ease-in-out, background-color 150ms 250ms ease-in-out, border 150ms 250ms ease-in-out;
+}
+.form-list .topbar .input {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 1rem;
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+}
+.form-list .topbar .input::-webkit-input-placeholder {
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+  font-weight: 200;
+}
+.form-list .topbar .input:focus {
+  outline: none;
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+.form-list .topbar .input.disabled:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form-list .topbar .input:hover {
+  border: 1px solid #f4f4f4;
+}
+
+.text_list ul li, .text_list h1 {
+    color: #f4f4f4;
+    position:relative;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3rem;
+    font-weight: 200;
+
+    padding: 5px 20px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    margin-bottom: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    list-style: none;
+}
